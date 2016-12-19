@@ -4,16 +4,14 @@
 # Figure out directory this script resides in
 exedir=$(readlink -f $(dirname $0))
 
-vimInstalled=$(which vim)
-if [ "$vimInstalled" == "/usr/bin/vim" ]; then
+if [[ $(which vim) ]]; then
     echo "Vim is already installed."
 else
 set -e
 sudo apt-get -y install vim
 set +e
 fi
-tmuxInstalled=$(which tmux)
-if [ "$tmuxInstalled" == "/usr/bin/tmux" ]; then
+if [[ $(which tmux) ]]; then
     echo "Tmux is already installed."
 else
 set -e
