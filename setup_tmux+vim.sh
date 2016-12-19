@@ -13,7 +13,7 @@ sudo apt-get -y install vim
 set +e
 fi
 tmuxInstalled=$(which tmux)
-if [ "$vimInstalled" == "/usr/bin/tmux" ]; then
+if [ "$tmuxInstalled" == "/usr/bin/tmux" ]; then
     echo "Vim is already installed."
 else
 set -e
