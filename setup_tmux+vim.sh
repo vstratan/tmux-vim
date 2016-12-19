@@ -20,7 +20,7 @@ set +e
 fi
 
 cp -r {.vim,.vimrc,.tmux.conf} ~/
-mkdir ~/local/tmux
+mkdir -p ~/local/tmux
 cp tmux.sh ~/local/tmux/
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
 vim +PluginInstall
