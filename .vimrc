@@ -16,3 +16,12 @@ filetype plugin indent on
 map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+set hlsearch
+set incsearch
+set background=dark
+set tabstop=4
+set shiftwidth=4
+set nocompatible
+syntax on
+set omnifunc=syntaxcomplete#Complete
