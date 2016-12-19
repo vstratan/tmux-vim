@@ -5,4 +5,5 @@
 exedir=$(readlink -f $(dirname $0))
 
 cp {.vim,.vimrc,.tmux.conf} ~/
-cp tmux.sh /opt/tmux
+mkdir ~/local
+cp tmux.sh ~/local/tmux
