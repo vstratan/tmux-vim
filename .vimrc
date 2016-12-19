@@ -14,6 +14,7 @@ Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual
 call vundle#end()
 filetype plugin indent on
 map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrows=0
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
