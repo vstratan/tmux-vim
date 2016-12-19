@@ -21,8 +21,8 @@ sudo apt-get -y install tmux
 set +e
 fi
 
-cp {.vim,.vimrc,.tmux.conf} ~/
-mkdir ~/local
+cp -r {.vim,.vimrc,.tmux.conf} ~/
+mkdir ~/local/tmux
 cp tmux.sh ~/local/tmux/
-
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
 vim +PluginInstall
