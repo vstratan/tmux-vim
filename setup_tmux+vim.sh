@@ -23,4 +23,7 @@ cp -r {.vim,.vimrc,.tmux.conf} ~/
 mkdir -p ~/local/tmux
 cp tmux.sh ~/local/tmux/
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+
+sed -i -e "1s|^|alias tmx='cd ~/local/tmux/ \&\& ./tmux.sh' \nalias tma='tmux a -t' \n | " ~/.bashrc
+
 vim +PluginInstall
