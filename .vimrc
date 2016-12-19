@@ -17,6 +17,7 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+set encoding=utf-8
 set hlsearch
 set incsearch
 set background=dark
