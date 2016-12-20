@@ -1,6 +1,5 @@
 # tmux-vim
 To use the setup:
-  - `chmod +x setup_tmux+vim.sh`
   - run setup_tmux+vim.sh
   
 Optional add these lines in ~/.bashrc :
