@@ -4,10 +4,13 @@
 # Figure out directory this script resides in
 exedir=$(readlink -f $(dirname $0))
 
+
 if [[ $(which vim) ]]; then
     echo "Vim is already installed."
 else
 set -e
+sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt-get -y install vim
 set +e
 fi
@@ -15,7 +18,7 @@ if [[ $(which tmux) ]]; then
     echo "Tmux is already installed."
 else
 set -e
-sudo apt-get -y install tmux
+./install_tmux_from_source
 set +e
 fi
 
