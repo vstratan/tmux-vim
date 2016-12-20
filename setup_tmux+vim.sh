@@ -18,7 +18,8 @@ if [[ $(which tmux) ]]; then
     echo "Tmux is already installed."
 else
 set -e
-./install_tmux_from_source
+sudo chmod +x install_tmux_from_source.sh
+./install_tmux_from_source.sh
 set +e
 fi
 
