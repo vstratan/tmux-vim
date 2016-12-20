@@ -1,4 +1,6 @@
 # tmux-vim
+this setup works only on debian linux for now
+
 To use the setup:
   - run setup_tmux+vim.sh
   
