@@ -4,4 +4,4 @@ To use the setup:
   
 Usage :
   - `tmx <session_name>` - creates new session
-  - `tma <session_name>' - attach to session
+  - `tma <session_name>` - attach to session
