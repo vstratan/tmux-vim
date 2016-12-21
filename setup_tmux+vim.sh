@@ -11,7 +11,7 @@ else
 set -e
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo apt-get -y install vim
+sudo apt-get -y install vim-gnome
 set +e
 fi
 if [[ $(which tmux) ]]; then
